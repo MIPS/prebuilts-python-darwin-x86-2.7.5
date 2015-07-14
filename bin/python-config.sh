@@ -31,7 +31,7 @@ installed_prefix ()
     echo $RESULT
 }
 
-prefix_build="/tmp/ndk-User/buildhost/install/prebuilt/darwin-x86_64"
+prefix_build="$TMPDIR/buildhost/install/prebuilt/darwin-x86_64"
 prefix_real=$(installed_prefix "$0")
 
 # Use sed to fix paths from their built to locations to their installed to locations.
